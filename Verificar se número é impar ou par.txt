@@ -1,0 +1,27 @@
+using System;
+					
+public class Program
+{
+	public static void Main()
+	{
+		double numero, final;
+		Console.WriteLine("Informe um número");
+		numero = Convert.ToDouble(Console.ReadLine());
+		
+		
+		
+		final = (numero % 2);
+		
+		
+		if (final == 1)
+		{
+			Console.WriteLine("O número é ímpar");
+			
+		
+		}
+			else
+			{
+				Console.WriteLine("O número é par");
+			}
+	}
+}

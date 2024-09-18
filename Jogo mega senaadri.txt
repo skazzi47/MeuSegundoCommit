@@ -1,0 +1,49 @@
+using System;
+
+public class Programa
+{
+	public static void Main()
+	{
+		// Declara as variáveis dos jogos, dezenas e do prêmio
+		int jogos;
+		int dezenas;
+		int premio;
+		Console.WriteLine("Digite o valor do prêmio da mega"); // Pergunta ao usuário o valor do prêmio.
+		premio = int.Parse(Console.ReadLine()); // Lê a resposta do usuário.
+		Console.WriteLine("Quantos jogos deseja fazer? : "); // Pergunta quantos jogos o usuário deseja realizar.
+		jogos = int.Parse(Console.ReadLine()); // Lê a resposta do usuário.
+		do // Inicia um laço de repetição.
+		{
+			Console.WriteLine("Quantas dezenas?\n\n"); // Pergunta ao usuário quantas dezenas cada jogo deve ter.
+			dezenas = int.Parse(Console.ReadLine()); // Lê a resposta do usuário.
+		}
+		while (dezenas < 6 || dezenas > 15); // Cria a condição do laço de repetição.
+		Random ran1 = new Random(); // Cria uma variável aleatória.
+		for (int o = 1; o <= jogos; o++) // Cria uma variável 'o' que aumenta a cada vez que essa for menor do que o número de jogos gerados, e para após se igualar.
+		{
+			for (int i = 1; i <= dezenas; i++) // Cria uma variável 'i' que aumenta a cada vez que essa for menor do que o número de dezenas geradas, e para após se igualar.
+			{
+				int mega1 = ran1.Next(1, 61); // Gera um número aleatório entre 1 e 60
+				if (i == dezenas) // Cria uma condição de decisão. se a variavel 'i' for igual ao número de dezenas inserida pelo usuário.
+				{
+					Console.Write($"{mega1:D2}\n"); // Caso 'i' for igual ao número de dezenas, ou seja, o último número gerado, irá finalizar com um espaço entre linhas, para a geração do próximo jogo.
+				}
+				else // Caso a condição se não for cumprida
+				{
+					Console.Write($"{mega1:D2}-"); // Escreve o número gerado com um hífen a frente.
+				}
+			}
+		}
+
+		double premio6dez, premio5dez, premio4dez; // Declara variáveis para a divisão dos prêmios
+		// Faz o cálculo de cada prêmio
+		premio6dez = premio * 0.75;
+		premio5dez = premio * 0.15;
+		premio4dez = premio * 0.10;
+		// Escreve a distribuição do prêmio
+		Console.WriteLine($"\n Distribuição do prêmio de R${premio}");
+		Console.WriteLine($"Acertou as 6 dezenas = R${premio6dez}");
+		Console.WriteLine($"Acertou 5 dezenas = R${premio5dez}");
+		Console.WriteLine($"Acertou 4 dezenas = R${premio4dez}");
+	}
+}

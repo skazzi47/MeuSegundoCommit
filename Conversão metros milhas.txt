@@ -1,0 +1,37 @@
+using System;
+					
+public class Program
+{
+	public static void Main()
+	{
+		Console.WriteLine("Digite a distância/comprimento em metros:");
+		if (decimal.TryParse(Console.ReadLine(), out decimal distancia))
+		{
+			Console.WriteLine("Escolha a unidade em que quer converter(cm, km, mi):");
+				string unidade = Console.ReadLine();
+			decimal resultado;
+				switch (unidade)
+				{
+					case "cm":
+						resultado = distancia * 100;
+						Console.WriteLine($"\n {distancia} metros é igual a {resultado} centímetros.");
+						break;
+						
+					case "km":
+						resultado = distancia / 1000;
+						Console.WriteLine($"{distancia} metros é igual a {resultado} kilômetro(s).");
+						break;
+						
+					case "mi":
+						resultado = distancia / 1609;
+						Console.WriteLine($"{distancia} metros é igual a {resultado:F2} milha(s).");
+						break;
+				}
+		}
+		else 
+		{
+			Console.WriteLine("Insira um valor válido.");
+		}
+						
+	}
+}

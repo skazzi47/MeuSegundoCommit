@@ -1,0 +1,53 @@
+using System;
+					
+public class Program
+{
+	public static void Main()
+	{
+		
+		Console.WriteLine("Escolha uma operação matemática:\n");
+		string op = Console.ReadLine();
+	
+		if(op == "+"){
+			Console.WriteLine("\nInforme dois números para fazer a soma:\n");
+			string numero = Console.ReadLine();
+			float num = float.Parse(numero);
+			numero = Console.ReadLine();
+			float num2 = float.Parse(numero);
+			float soma= num + num2;
+			Console.WriteLine("\nA soma de {0} + {1} é igual à {2}.\n", num, num2, soma);
+		}
+		else if(op == "-"){
+			
+			Console.WriteLine("\nInforme dois números para fazer a subtração:\n");
+			string numero = Console.ReadLine();
+			int num = int.Parse(numero);
+			numero = Console.ReadLine();
+			int num2 = int.Parse(numero);
+			int sub = num - num2;
+			Console.WriteLine("\nO valor de {0} - {1} é igual à {2}.\n", num, num2, sub);
+		
+		}
+		else if(op == "*"){
+			
+			Console.WriteLine("\nInforme dois números para fazer a multiplicação:\n");
+			string numero = Console.ReadLine();
+			int num = int.Parse(numero);
+			numero = Console.ReadLine();
+			int num2 = int.Parse(numero);
+			int mult = num * num2;
+			Console.WriteLine("\nO valor de {0} * {1} é igual à {2}.\n", num, num2, mult);
+		
+		}
+		else if(op == "/"){
+			
+			Console.WriteLine("\nInforme dois números para fazer a divisão:\n");
+			string numero = Console.ReadLine();
+			float num = float.Parse(numero);
+			numero = Console.ReadLine();
+			float num2 = float.Parse(numero);
+			float div = num / num2;
+			Console.WriteLine($"\nO valor de {num} / {num2} é igual à: {Math.Round(div,2)}");
+		}
+	}
+}

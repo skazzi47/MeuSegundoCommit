@@ -1,0 +1,59 @@
+using System;
+
+public class Program
+{
+	public static void Main()
+	{
+		Console.WriteLine("Escolha um número de 1 a 10: ");
+		if (int.TryParse(Console.ReadLine(), out int valor))
+		{
+			Console.WriteLine("Informe o operador: ");
+			string operador = Console.ReadLine();
+			double resultado;
+			switch (operador)
+			{
+				case "*":
+					for (int contador = 1; contador <= 10; contador++)
+					{
+						resultado = valor * contador;
+						Console.WriteLine($"\n {valor} * {contador} = {resultado} ");
+					}
+
+					break;
+					
+					case "-":
+					for (int contador = 1; contador <= 10; contador++)
+					{
+						resultado = valor - contador;
+						Console.WriteLine($"\n {valor} - {contador} = {resultado} ");
+					}
+
+					break;
+					
+					case "+":
+					for (int contador = 1; contador <= 10; contador++)
+					{
+						resultado = valor + contador;
+						Console.WriteLine($"\n {valor} + {contador} = {resultado} ");
+					}
+
+					break;
+					
+					case "/":
+					for (int contador = 1; contador <= 10; contador++)
+					{
+						resultado = valor / contador;
+						Console.WriteLine($"\n {valor} / {contador} = {resultado} ");
+					}
+
+					break;
+					
+				
+			}
+		}
+		else
+		{
+			Console.WriteLine("Nùmero invalido");
+		}
+	}
+}

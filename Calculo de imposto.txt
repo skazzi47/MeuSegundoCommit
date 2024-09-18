@@ -1,0 +1,27 @@
+using System;
+					
+public class Program
+{
+	public static void Main()
+	{
+		Console.WriteLine("Digite o valor do salário bruto");
+		
+		if (decimal.TryParse(Console.ReadLine(), out decimal salarioBruto))
+		{
+			decimal imposto;
+			if (salarioBruto <= 3000)
+			{
+				imposto = salarioBruto * 0.10m;
+			}
+			else if (salarioBruto <= 6000)
+			{
+				imposto = salarioBruto * 0.15m;
+			}
+			else
+			{ 
+				imposto = salarioBruto * 0.20m;
+			}
+			Console.WriteLine($"O valor do imposto é {imposto}");
+		}
+	}
+}

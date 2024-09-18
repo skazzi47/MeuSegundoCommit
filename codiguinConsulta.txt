@@ -1,0 +1,129 @@
+using System;
+
+class Program
+{
+     static void Main()
+    {
+      
+		Console.WriteLine("\t\t\t\t\t\t||Sistema de Consulta de Saúde Automatizado||\n");
+		Console.WriteLine("Primeiro calcularemos o seu IMC (Índice de Massa Corpórea), por gentileza nos informe seu(a):\n");
+		return1:
+		 
+		 Console.Write("\nPeso em KG: ");
+		 if(float.TryParse(Console.ReadLine(), out float peso));
+			else 
+			{
+				Console.WriteLine("\n||INFORME UM VALOR VÁLIDO!||\n");	  
+				goto return1;
+			}
+					
+		 return2:
+		 Console.Write("\nAltura em M: ");
+		 if(float.TryParse(Console.ReadLine(), out float altura));
+			else 
+			{
+				Console.WriteLine("\n|INFORME UM VALOR VÁLIDO!|\n");	  
+				goto return2;
+			}
+				float imc = peso / (altura * altura);
+		
+		Console.WriteLine($"\nSeu IMC tem o valor de: {imc:F2}.\n");
+		Console.WriteLine("MENOR QUE 18.5 = DESNUTRIÇÃO");
+		Console.WriteLine("ENTRE 18.5 E 24.9 = NORMAL");
+		Console.WriteLine("ENTRE 25.0 E 29.9 = SOBREPESO");
+		Console.WriteLine("ENTRE 30.0 E 39.9 = OBESIDADE");
+		Console.WriteLine("MAIOR QUE 40.0 = OBESIDADE GRAVE\n");
+		
+		if(imc < 18.5)
+		{
+			Console.WriteLine("Você está DESNUTRIDO.");
+		}
+		else if( imc >= 18.5 && imc <= 24.9)
+		{
+			Console.WriteLine("Você está na faixa de peso NORMAL.");
+		}
+		else if( imc >= 25.0 && imc <= 29.9)
+		{
+			Console.WriteLine("Você está com SOBREPESO.");
+		}
+		else if( imc >= 30.0 && imc <= 39.9)
+		{
+			Console.WriteLine("Você está com OBESIDADE.");
+		}
+		else if( imc > 40.0)
+		{
+			Console.WriteLine("Você está com OBESIDADE GRAVE.");
+		}
+		
+		Console.WriteLine("\n\nVocê está com alguns dos problema de saúde listados abaixo?: \n");
+		 Console.WriteLine("• Diabetes");
+		 Console.WriteLine("• Problemas nas articulações (Ex: artrite)");
+		 Console.WriteLine("• Problemas cardíacos");
+		 Console.WriteLine("• Obesidade");
+		 Console.WriteLine("• Dores nas costas");
+		 Console.WriteLine("• Ansiedade ou estresse");
+
+		 Console.Write("\nDigite 0 Para NÃO  ou  Digite 1 para SIM: ");
+		 int resp = int.Parse(Console.ReadLine());
+		 
+		 if(resp == 0)
+		 {
+		 	Console.WriteLine("Atendimento Finalizado, Agradecemos a Preferência.\n");
+		 }
+		 else if(resp == 1)
+		 {
+		 	Console.WriteLine("\n\t\t||Lista de Enfermidades||\n");
+			 	Console.WriteLine("• 1- Diabetes");
+		 			Console.WriteLine("• 2- Problemas nas articulações (Ex: artrite)");
+		 				Console.WriteLine("• 3- Problemas cardíacos");
+		 					Console.WriteLine("• 4- Obesidade");
+		 				Console.WriteLine("• 5- Dores nas costas");
+		 			Console.WriteLine("• 6- Ansiedade ou estresse\n");
+				Console.WriteLine("Digite o número correspondente ao problema que você têm: ");
+			int doença = int.Parse(Console.ReadLine());
+		 	
+		 	if(doença == 1)
+			{
+				Console.WriteLine("\nVocê selecionou DIABETES");
+				Console.WriteLine("\nAqui vão algumas dicas para lidar com Diabetes:\n");
+				Console.WriteLine("1- Caminhadas rápidas\n2- Natação\n3- Treinamento de resistência (com pesos leves a moderados)\n4- Exercícios aeróbicos de baixa intensidade\n5- Yoga (ajuda no controle do estresse e glicemia)");
+				Console.WriteLine("Consulta Finalizada, Agradecemos a Preferência.\n");
+			}
+		 	else if(doença == 2)
+			{
+				Console.WriteLine("\nVocê selecionou PROBLEMAS NAS ARTICULAÇÕES");
+				Console.WriteLine("\nAqui vão algumas dicas para lidar com Problemas nas Articulações:\n");
+				Console.WriteLine("1- Hidroginástica\n2- Caminhadas leves\n3- Ciclismo (com baixa resistência)\n4- Alongamentos e yoga\n5- Pilates (fortalecimento sem sobrecarga articular)");
+				Console.WriteLine("Consulta Finalizada, Agradecemos a Preferência.\n");
+			}
+		 	else if(doença == 3)
+			{
+				Console.WriteLine("\nVocê selecionou PROBLEMAS CARDÍACOS");
+				Console.WriteLine("\nAqui vão algumas dicas para lidar com Problemas Cardíacos:\n");
+				Console.WriteLine("1- Caminhadas moderadas\n2- Bicicleta leve\n3- Natação\n4- Exercícios de alongamento\n5- Tai Chi (uma forma de exercício suave que também ajuda com equilíbrio)");
+				Console.WriteLine("Consulta Finalizada, Agradecemos a Preferência.\n");
+			}
+			else if(doença == 4)
+			{
+				Console.WriteLine("\nVocê selecionou OBESIDADE");
+				Console.WriteLine("\nAqui vão algumas dicas para lidar com Obesidade:\n");
+				Console.WriteLine("1- Caminhadas e caminhadas rápidas\n2- Natação\n3- Exercícios em bicicleta ergométrica\n4- Exercícios aeróbicos de baixo impacto\n5- Hidroginástica");
+				Console.WriteLine("Consulta Finalizada, Agradecemos a Preferência.\n");
+			}	
+			else if(doença == 5)
+			{
+				Console.WriteLine("\nVocê selecionou DORES NAS COSTAS");
+				Console.WriteLine("\nAqui vão algumas dicas para lidar com Dores nas Costas:\n");
+				Console.WriteLine("1- Caminhada em ritmo leve\n2- Natação ou hidroginástica\n3- Yoga com foco em alongamento e fortalecimento do núcleo\n4- Pilates (fortalecimento do núcleo)\n5- Exercícios de alongamento e mobilidade");
+				Console.WriteLine("Consulta Finalizada, Agradecemos a Preferência.\n");
+			}
+			else if(doença == 6)
+			{
+				Console.WriteLine("\nVocê selecionou ANSIEDADE OU STRESS");
+				Console.WriteLine("\nAqui vão algumas dicas para lidar com Ansiedade ou Stress:\n");
+				Console.WriteLine("1- Yoga\n2- Tai Chi\n3- Meditação guiada (combinada com alongamentos)\n4- Caminhadas ao ar livre\n5- Dança (para liberar endorfina)");
+				Console.WriteLine("Consulta Finalizada, Agradecemos a Preferência.\n");
+			}
+		}
+    }
+}
