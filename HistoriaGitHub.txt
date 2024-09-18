@@ -1,0 +1,16 @@
+O GitHub foi criado em 2008 por Tom Preston-Werner, Chris Wanstrath, PJ Hyett e Scott Chacon. Ele surgiu como uma plataforma para hospedagem de código-fonte que usa o **Git**, um sistema de controle de versão desenvolvido por **Linus Torvalds** em 2005. O Git foi criado para ajudar a gerenciar o desenvolvimento do kernel do Linux, e o GitHub construiu uma interface gráfica e funcionalidades adicionais sobre o Git, tornando-o mais acessível para desenvolvedores e equipes.
+
+### **História**
+- **2005**: Linus Torvalds desenvolve o Git, um sistema de controle de versão distribuído.
+- **2007**: Tom Preston-Werner cria uma ideia inicial chamada "Grit", que era uma biblioteca Ruby para Git.
+- **2008**: GitHub é fundado, combinando o sistema de controle de versão Git com uma interface web intuitiva. Desde o início, seu foco era simplificar o uso do Git e facilitar a colaboração em projetos de código aberto.
+- **Crescimento**: Ao longo dos anos, GitHub se tornou a plataforma preferida para desenvolvedores colaborarem em projetos de código aberto, empresas de software e até projetos pessoais. Ela oferece uma série de ferramentas que facilitam o gerenciamento do ciclo de vida de software, como rastreamento de problemas, revisões de código e integração contínua.
+
+### **Propósito**
+O GitHub foi criado para resolver alguns problemas chave enfrentados por desenvolvedores:
+- **Colaboração**: Permite que várias pessoas trabalhem no mesmo código de forma distribuída e organizada, controlando alterações feitas por diferentes indivíduos.
+- **Controle de versão**: Com o Git integrado, a plataforma oferece controle de versão para que alterações no código possam ser rastreadas, revertidas ou comparadas de forma eficiente.
+- **Hospedagem de projetos de código aberto**: GitHub rapidamente se tornou o lugar principal para a comunidade de código aberto. Projetos populares como o Linux, Node.js, Python, entre outros, são hospedados lá.
+- **Integração e automação**: Oferece ferramentas como GitHub Actions e integração contínua (CI/CD) para ajudar a automatizar testes e implantações.
+
+GitHub transformou-se em uma parte fundamental do ecossistema de desenvolvimento de software, conectando milhões de desenvolvedores globalmente, permitindo não só colaboração técnica, mas também a disseminação e compartilhamento de conhecimento.
