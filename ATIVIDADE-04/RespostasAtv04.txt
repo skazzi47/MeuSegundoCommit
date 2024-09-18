@@ -1,0 +1,14 @@
+### **Atividade-04**
+
+Quais são os comandos basicos relacionados ao GIT que utilizamos em sala de aula?
+
+Para iniializar o GIT e um novo repositório:(git init)
+
+Para adicionar as alterações feitas no repositório:(git add .)
+
+Para gravar as alterações:(git commit -m "texto")
+
+Para enviar as alterações para a nuvem/repositório online:(git push)
+
+Se o repoitório em meu computador estiver desatualizado como faço para atualiza-lo?:(git pull)
+Obs:(Lembrando que estarei atualizando com base no repositório que está no GITHUB).
