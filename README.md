@@ -16,4 +16,13 @@ git commit:  Fazer um comentário.
 git status: Mostra se tem arquivos que foram mdificados no repositório e mostra se eles foram aicionados usando o cmando "git add .".
 
 
-git add .: Adiciona os arquivos modificados no repositório e os prepara para serem enviados para a nuvem GitHub usando o comando "git push
+git add .: Adiciona os arquivos modificados no repositório e os prepara para serem enviados para a nuvem GitHub usando o comando "git push.
+
+
+cmdkey/delete:LegacyGeneric:target=git:https://github.com   :Remove os usuários logados no sistema do github atual.
+
+
+git config --global user.name "Nome Sobrenome": Loga o seu nome de usuário do gitub no gitbash.
+
+
+git config --global user.email "seu_email@exemlo.com": Loga o seu email no seu gitbash.
