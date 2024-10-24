@@ -19,7 +19,7 @@ git status: Mostra se tem arquivos que foram mdificados no repositório e mostra
 git add .: Adiciona os arquivos modificados no repositório e os prepara para serem enviados para a nuvem GitHub usando o comando "git push.
 
 
-cmdkey/delete:LegacyGeneric:target=git:https://github.com   :Remove os usuários logados no sistema do github atual.
+cmdkey /delete:LegacyGeneric:target=git:https://github.com   :Remove os usuários logados no sistema do github atual.
 
 
 git config --global user.name "Nome Sobrenome": Loga o seu nome de usuário do gitub no gitbash.
